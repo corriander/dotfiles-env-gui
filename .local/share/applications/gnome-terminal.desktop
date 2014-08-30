@@ -13,6 +13,7 @@ Keywords=GNOME;GTK;Utility;TerminalEmulator;
 X-Ubuntu-Gettext-Domain=gnome-terminal
 
 X-Ayatana-Desktop-Shortcuts=Root;Deimos;W7;ST780WL
+
 [Root Shortcut Group]
 Name=Root Terminal
 Exec=gksu gnome-terminal
@@ -20,7 +21,7 @@ TargetEnvironment=Unity
 
 [Deimos Shortcut Group]
 Name=alex@deimos
-Exec=gnome-terminal --disable-factory --sm-client-disable --class=remoteserver -x ssh -t deimos
+Exec=ssh -X deimos gnome-terminal
 TargetEnvironment=Unity
 
 [W7 Shortcut Group]
